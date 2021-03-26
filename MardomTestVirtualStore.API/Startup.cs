@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,29 @@ namespace MardomTestVirtualStore.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerGen();
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "API",
+                    Description = "",
+                    TermsOfService = new Uri("https://example.com/terms"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "MardomTestVirtualStore",
+                        Email = "",
+                        Url = new Uri("https://example.com"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Use under OpenApiLicense",
+                        Url = new Uri("https://example.com/license"),
+                    }
+                });
+            });
+
+
             services.AddControllers();
         }
 
@@ -35,6 +59,12 @@ namespace MardomTestVirtualStore.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Test1 Api v1");
+            });
 
             app.UseHttpsRedirection();
 
