@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Erje_\\Documents\\MaritimaTestVirtualStore\\TestVirtualStore\\TestVirtualStore.Repo\\TestVirtualStore.Repo.csproj",
-      "projectName": "TestVirtualStore.Repo",
-      "projectPath": "C:\\Users\\Erje_\\Documents\\MaritimaTestVirtualStore\\TestVirtualStore\\TestVirtualStore.Repo\\TestVirtualStore.Repo.csproj",
+      "projectUniqueName": "C:\\Users\\Erje_\\Documents\\MaritimaTestVirtualStore\\TestVirtualStore\\TestVirtualStore.Repository\\TestVirtualStore.Repository.csproj",
+      "projectName": "TestVirtualStore.Repository",
+      "projectPath": "C:\\Users\\Erje_\\Documents\\MaritimaTestVirtualStore\\TestVirtualStore\\TestVirtualStore.Repository\\TestVirtualStore.Repository.csproj",
       "packagesPath": "C:\\Users\\Erje_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Erje_\\Documents\\MaritimaTestVirtualStore\\TestVirtualStore\\TestVirtualStore.Repo\\obj\\",
+      "outputPath": "C:\\Users\\Erje_\\Documents\\MaritimaTestVirtualStore\\TestVirtualStore\\TestVirtualStore.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
