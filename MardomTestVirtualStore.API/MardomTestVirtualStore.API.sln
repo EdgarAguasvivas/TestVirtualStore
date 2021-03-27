@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MardomTestVirtualStore.API", "MardomTestVirtualStore.API.csproj", "{DEA5747A-D76F-4A84-BDC1-EB0B3DE36577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVirtualStore.DataAccess", "..\TestVirtualStore.DataAccess\TestVirtualStore.DataAccess.csproj", "{F674AB2A-3362-4158-A82E-25C1BF827ED7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestVirtualStore.DataAccess", "..\TestVirtualStore.DataAccess\TestVirtualStore.DataAccess.csproj", "{F674AB2A-3362-4158-A82E-25C1BF827ED7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVirtualStore.Repo", "..\TestVirtualStore.Repo\TestVirtualStore.Repo.csproj", "{E28C03E3-9ED8-450A-97D8-F145A96E13D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestVirtualStore.Services", "..\TestVirtualStore.Services\TestVirtualStore.Services.csproj", "{4A624B42-4F5C-417E-AF4D-37B79721F3D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVirtualStore.Services", "..\TestVirtualStore.Services\TestVirtualStore.Services.csproj", "{4A624B42-4F5C-417E-AF4D-37B79721F3D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestVirtualStore.Repository", "..\TestVirtualStore.Repository\TestVirtualStore.Repository.csproj", "{89F60DC0-CD47-4A43-9236-D656D4AB6868}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{F674AB2A-3362-4158-A82E-25C1BF827ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F674AB2A-3362-4158-A82E-25C1BF827ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F674AB2A-3362-4158-A82E-25C1BF827ED7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E28C03E3-9ED8-450A-97D8-F145A96E13D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E28C03E3-9ED8-450A-97D8-F145A96E13D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E28C03E3-9ED8-450A-97D8-F145A96E13D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E28C03E3-9ED8-450A-97D8-F145A96E13D3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A624B42-4F5C-417E-AF4D-37B79721F3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4A624B42-4F5C-417E-AF4D-37B79721F3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A624B42-4F5C-417E-AF4D-37B79721F3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A624B42-4F5C-417E-AF4D-37B79721F3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89F60DC0-CD47-4A43-9236-D656D4AB6868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F60DC0-CD47-4A43-9236-D656D4AB6868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F60DC0-CD47-4A43-9236-D656D4AB6868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F60DC0-CD47-4A43-9236-D656D4AB6868}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

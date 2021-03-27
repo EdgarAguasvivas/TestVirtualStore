@@ -1,0 +1,9 @@
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Services\bin\Debug\netcoreapp3.1\TestVirtualStore.Services.deps.json
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Services\bin\Debug\netcoreapp3.1\TestVirtualStore.Services.dll
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Services\bin\Debug\netcoreapp3.1\TestVirtualStore.Services.pdb
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Services\obj\Debug\netcoreapp3.1\TestVirtualStore.Services.csprojAssemblyReference.cache
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Services\obj\Debug\netcoreapp3.1\TestVirtualStore.Services.AssemblyInfoInputs.cache
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Services\obj\Debug\netcoreapp3.1\TestVirtualStore.Services.AssemblyInfo.cs
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Services\obj\Debug\netcoreapp3.1\TestVirtualStore.Services.csproj.CoreCompileInputs.cache
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Services\obj\Debug\netcoreapp3.1\TestVirtualStore.Services.dll
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Services\obj\Debug\netcoreapp3.1\TestVirtualStore.Services.pdb

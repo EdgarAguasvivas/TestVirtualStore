@@ -6,6 +6,6 @@ namespace TestVirtualStore.DataAccess
 {
     public class BaseEntity
     {
-        public int ID_Product { get; set; }
+        public int ID { get; set; }
     }
 }
