@@ -12,5 +12,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TestVirtualStore.Services\TestVirtualStore.Services.csproj" />
+  </ItemGroup>
+
 
 </Project>

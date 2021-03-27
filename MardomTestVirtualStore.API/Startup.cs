@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TestVirtualStore.Services;
 
 namespace MardomTestVirtualStore.API
 {
@@ -48,6 +49,11 @@ namespace MardomTestVirtualStore.API
                 });
             });
 
+            services.AddDbContext<ContextApplication>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ISalesService, SalesService>();
 
             services.AddControllers();
         }
