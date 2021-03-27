@@ -4,12 +4,13 @@ using System.Text;
 
 namespace TestVirtualStore.DataAccess
 {
-    public class User
+    public class User : BaseEntity
     {
-        public int ID_User { get; set; }
         public string User_Name { get; set; }
         public string Password { get; set; }
-        public int ID_Rol { get; set; }
+        public int RolFK { get; set; }
         public Roles Roles { get; set; }
+
+        public ICollection<Sales> Sales { get; set; }
     }
 }

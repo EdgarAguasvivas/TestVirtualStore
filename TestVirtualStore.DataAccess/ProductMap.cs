@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace TestVirtualStore.DataAccess
 {
@@ -8,10 +6,11 @@ namespace TestVirtualStore.DataAccess
     {
         public ProductMap(EntityTypeBuilder<Product> entityBuilder)
         {
-            entityBuilder.HasKey(p => p.ID_Product);        
+            entityBuilder.HasKey(t => t.ID);
             entityBuilder.Property(t => t.Product_Code).IsRequired();
             entityBuilder.Property(t => t.Product_Name).IsRequired();
             entityBuilder.Property(t => t.Price).IsRequired();
-            entityBuilder.Property(t => t.Quantity).IsRequired();           
+            entityBuilder.Property(t => t.Quantity).IsRequired();
         }
     }
+}
