@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "9aqQXSpD0j1XpIAxUOYJBvGxGa566wLZvqTC6l/jWsw3cjCaRJJMIk5ikF1LeuTzjsyLjXRSdaoGi/oPy78rkg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Erje_\\Documents\\MaritimaTestVirtualStore\\TestVirtualStore\\MardomTestVirtualStore.API\\MardomTestVirtualStore.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Erje_\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Erje_\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Erje_\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.1\\swashbuckle.aspnetcore.6.1.1.nupkg.sha512",
+    "C:\\Users\\Erje_\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.1\\swashbuckle.aspnetcore.swagger.6.1.1.nupkg.sha512",
+    "C:\\Users\\Erje_\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.1\\swashbuckle.aspnetcore.swaggergen.6.1.1.nupkg.sha512",
+    "C:\\Users\\Erje_\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.1\\swashbuckle.aspnetcore.swaggerui.6.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
