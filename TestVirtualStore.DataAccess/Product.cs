@@ -8,7 +8,7 @@ namespace TestVirtualStore.DataAccess
     {
         public string Product_Code { get; set; }
         public string Product_Name { get; set; }
-        public double Price { get; set; }
+        public decimal Price { get; set; }
         public int Quantity { get; set; }
 
         public ICollection<Sales> Sales { get; set; }

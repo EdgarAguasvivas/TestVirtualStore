@@ -1,20 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace TestVirtualStore.DataAccess
 {
-    public class SalesMap
+    public class SalesMap : IEntityTypeConfiguration<Sales>
     {
-        public SalesMap(EntityTypeBuilder<Sales> entityBuilder)
-        {
-            entityBuilder.HasKey(s => s.ID);           
-            entityBuilder.Property(s => s.Date).IsRequired();
-            entityBuilder.Property(s => s.Quantity).IsRequired();
-            entityBuilder.Property(s => s.Total).IsRequired();
-            entityBuilder.HasOne(u => u.User).WithMany(s => s.Sales).HasForeignKey(u => u.UserFK);
-            entityBuilder.HasOne(p => p.Product).WithMany(s => s.Sales).HasForeignKey(p => p.ProductFK);
+        public void Configure(EntityTypeBuilder<Sales> builder)
+        {           
+            builder.HasKey(s => s.ID);
+            builder.Property(s => s.Date).IsRequired();
+            builder.Property(s => s.Quantity).IsRequired();
+            builder.Property(s => s.Total).IsRequired();
+            builder.HasOne(u => u.User).WithMany(s => s.Sales).HasForeignKey(u => u.UserFK);
+            builder.HasOne(p => p.Product).WithMany(s => s.Sales).HasForeignKey(p => p.ProductFK);
+
         }
     }
+   
 }

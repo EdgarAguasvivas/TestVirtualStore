@@ -1,32 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using TestVirtualStore.DataAccess;
+using TestVirtualStore.Repository;
 
 namespace TestVirtualStore.Services
 {
-    public class SalesService
+    public class SalesService : ISalesService
     {
-        private IRepository<Sales> salesProfileRepository;
+        private IRepository<Sales> salesRepository;
 
-        public UserService(IRepository<Sales> salesProfileRepository)
+        public SalesService(IRepository<Sales> salesRepository)
         {
-            this.salesProfileRepository = salesProfileRepository;            
+            this.salesRepository = salesRepository;            
         }
 
         public IEnumerable<Sales> GetSales()
         {
-            return salesProfileRepository.GetAll();
+            return salesRepository.GetAll();
         }
 
-        public Sales GetSales(int id)
+        public Sales GetSale(int id)
         {
-            return salesProfileRepository.Get(id);
+            return salesRepository.Get(id);
         }
 
-        public void InsertSales(Sales sales)
+        public void InsertSale(Sales sales)
         {
-            salesProfileRepository.Insert(sales);
+            salesRepository.Insert(sales);
         }
     }
 }

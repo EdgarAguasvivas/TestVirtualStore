@@ -1,16 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace TestVirtualStore.DataAccess
 {
-    public class RolesMap
+    public class RolesMap : IEntityTypeConfiguration<Roles>
     {
-        public RolesMap(EntityTypeBuilder<Roles> entityBuilder)
+        public void Configure(EntityTypeBuilder<Roles> builder)
         {
-            entityBuilder.HasKey(r => r.ID);
-            entityBuilder.Property(r => r.Rol_Name).IsRequired();           
+            builder.HasKey(r => r.ID);
+            builder.Property(r => r.Rol_Name).IsRequired();
+
         }
-    }
+    }    
 }

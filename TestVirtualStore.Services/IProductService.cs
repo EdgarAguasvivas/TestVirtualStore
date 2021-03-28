@@ -12,5 +12,6 @@ namespace TestVirtualStore.Services
         void InsertProduct(Product product);
         void UpdateProduct(Product product);
         void DeleteProduct(int id);
+        void ReplacementProduct(int id, int quantity);
     }
 }
