@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using TestVirtualStore.DataAccess;
+using TestVirtualStore.Repository;
 
 namespace TestVirtualStore.Services
 {
     public class UserService : IUserService
     {
-        private IRepository<User> userRepository;
+        private readonly IRepository<User> userRepository;
         
 
         public UserService(IRepository<User> userRepository)

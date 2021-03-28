@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using TestVirtualStore.DataAccess;
+using System;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using TestVirtualStore.DataAccess;
-using System.Linq;
 
 namespace TestVirtualStore.Repository
 {
-    public class Repository : IRepository<T> where T : BaseEntity
+    public class Repository<T> : IRepository<T> where T : BaseEntity
     {
         private readonly ContextApplication context;
         private readonly DbSet<T> entities;
@@ -41,6 +39,7 @@ namespace TestVirtualStore.Repository
             {
                 throw new ArgumentNullException("entity");
             }
+            entities.Update(entity);
             context.SaveChanges();
         }
 

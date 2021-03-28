@@ -5,16 +5,16 @@ namespace TestVirtualStore.Repository
 {
     public class ContextApplication : DbContext
     {
-        public ApplicationContext(DbContextOptions<ContextApplication> options) : base(options)
+        public ContextApplication(DbContextOptions<ContextApplication> options) : base(options)
         {
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            new ProductMap(modelBuilder.Entity<Product>());
-            new RolesMap(modelBuilder.Entity<Roles>());
-            new SalesMap(modelBuilder.Entity<Sales>());
-            new UserMap(modelBuilder.Entity<User>());
+            modelBuilder.ApplyConfiguration<Product>(new ProductMap());
+            modelBuilder.ApplyConfiguration<Roles>(new RolesMap());
+            modelBuilder.ApplyConfiguration<Sales>(new SalesMap());
+            modelBuilder.ApplyConfiguration<User>(new UserMap());           
         }
     }
 }

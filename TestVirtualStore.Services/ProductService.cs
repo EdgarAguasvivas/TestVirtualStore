@@ -40,5 +40,13 @@ namespace TestVirtualStore.Services
             productRepository.Remove(product);
             productRepository.SaveChanges();
         }
+
+        public void ReplacementProduct(int id,int quantity)
+        {
+            Product product = GetProduct(id);
+            product.Quantity = quantity;
+
+            UpdateProduct(product);
+        }     
     }
 }
