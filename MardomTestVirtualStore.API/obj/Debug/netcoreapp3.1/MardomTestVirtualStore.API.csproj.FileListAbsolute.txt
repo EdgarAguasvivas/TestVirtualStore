@@ -2,8 +2,8 @@ C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVir
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVirtualStore.API\obj\Debug\netcoreapp3.1\MardomTestVirtualStore.API.AssemblyInfoInputs.cache
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVirtualStore.API\obj\Debug\netcoreapp3.1\MardomTestVirtualStore.API.AssemblyInfo.cs
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVirtualStore.API\obj\Debug\netcoreapp3.1\MardomTestVirtualStore.API.csproj.CoreCompileInputs.cache
-C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVirtualStore.API\obj\Debug\netcoreapp3.1\MardomTestVirtualStore.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVirtualStore.API\obj\Debug\netcoreapp3.1\MardomTestVirtualStore.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVirtualStore.API\obj\Debug\netcoreapp3.1\MardomTestVirtualStore.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVirtualStore.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVirtualStore.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\MardomTestVirtualStore.API\bin\Debug\netcoreapp3.1\MardomTestVirtualStore.API.exe
