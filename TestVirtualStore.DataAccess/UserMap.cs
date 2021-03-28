@@ -10,7 +10,7 @@ namespace TestVirtualStore.DataAccess
             builder.HasKey(u => u.ID);
             builder.Property(u => u.User_Name).IsRequired();
             builder.Property(u => u.Password).IsRequired();
-            builder.HasOne(r => r.Roles).WithMany(u => u.Users).HasForeignKey(u => u.RolFK);
+            builder.HasOne(r => r.Roles).WithMany(u => u.Users).HasForeignKey(u => u.Rol);
         }
     }  
 }
