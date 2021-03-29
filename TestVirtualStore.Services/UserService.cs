@@ -1,43 +1,45 @@
 ﻿using System.Collections.Generic;
 using TestVirtualStore.DataAccess;
 using TestVirtualStore.Repository;
+using TestVirtualStore.Repository.Helpers;
 
 namespace TestVirtualStore.Services
 {
     public class UserService : IUserService
     {
-        private readonly IRepository<User> userRepository;
+        private readonly IRepository<User> _userRepository;
         
 
         public UserService(IRepository<User> userRepository)
         {
-            this.userRepository = userRepository;           
+            this._userRepository = userRepository;           
         }
 
         public IEnumerable<User> GetUsers()
         {
-            return userRepository.GetAll();
+            return _userRepository.GetAll();
         }
 
         public User GetUser(int id)
         {
-            return userRepository.Get(id);
+            return _userRepository.Get(id);
         }
 
         public void InsertUser(User user)
         {
-            userRepository.Insert(user);
+            user.Password = SecurityService.Encrypt(user.Password);
+            _userRepository.Insert(user);
         }
         public void UpdateUser(User user)
         {
-            userRepository.Update(user);
+            _userRepository.Update(user);
         }
 
         public void DeleteUser(int id)
         {           
             User user = GetUser(id);
-            userRepository.Remove(user);
-            userRepository.SaveChanges();
+            _userRepository.Remove(user);
+            _userRepository.SaveChanges();
         }
     }
 }

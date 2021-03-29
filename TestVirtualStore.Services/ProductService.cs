@@ -8,37 +8,37 @@ namespace TestVirtualStore.Services
 {
     public class ProductService : IProductService
     {
-        private IRepository<Product> productRepository;
+        private IRepository<Product> _productRepository;
 
         public ProductService(IRepository<Product> productRepository)
         {
-            this.productRepository = productRepository;
+            this._productRepository = productRepository;
         }
 
         public IEnumerable<Product> GetProducts()
         {
-            return productRepository.GetAll();
+            return _productRepository.GetAll();
         }
 
         public Product GetProduct(int id)
         {
-            return productRepository.Get(id);
+            return _productRepository.Get(id);
         }
 
         public void InsertProduct(Product product)
         {
-            productRepository.Insert(product);
+            _productRepository.Insert(product);
         }
         public void UpdateProduct(Product product)
         {
-            productRepository.Update(product);
+            _productRepository.Update(product);
         }
 
         public void DeleteProduct(int id)
         {
             Product product = GetProduct(id);
-            productRepository.Remove(product);
-            productRepository.SaveChanges();
+            _productRepository.Remove(product);
+            _productRepository.SaveChanges();
         }
 
         public void ReplacementProduct(int id,int quantity)

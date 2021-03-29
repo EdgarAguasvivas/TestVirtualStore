@@ -6,4 +6,3 @@ C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualSt
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.DataAccess\obj\Debug\netcoreapp3.1\TestVirtualStore.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.DataAccess\obj\Debug\netcoreapp3.1\TestVirtualStore.DataAccess.dll
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.DataAccess\obj\Debug\netcoreapp3.1\TestVirtualStore.DataAccess.pdb
-C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.DataAccess\obj\Debug\netcoreapp3.1\TestVirtualStore.DataAccess.csprojAssemblyReference.cache
