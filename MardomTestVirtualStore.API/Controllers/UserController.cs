@@ -13,29 +13,29 @@ namespace MardomTestVirtualStore.API.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserService userService;
+        private readonly IUserService _userService;
 
         public UserController(IUserService userService)
         {
-            this.userService = userService;
+            this._userService = userService;
         }
 
         [HttpGet]
         public List<User> GetUser()
         {
-            return userService.GetUsers().ToList();
+            return _userService.GetUsers().ToList();
         }
 
         [HttpGet("{id}")]
         public ActionResult<User> GetUser(int id)
         {
-            return userService.GetUser(id);
+            return _userService.GetUser(id);
         }
 
         [HttpPost]
-        public ActionResult<Product> PostUser(User user)
+        public ActionResult<User> PostUser(User user)
         {
-            userService.InsertUser(user);
+            _userService.InsertUser(user);
             return CreatedAtAction("GetUser", new { id = user.ID }, user);
         }
 
@@ -47,7 +47,7 @@ namespace MardomTestVirtualStore.API.Controllers
                 return BadRequest();
             }
 
-            userService.UpdateUser(user);
+            _userService.UpdateUser(user);
 
             return NoContent();
         }
@@ -55,13 +55,13 @@ namespace MardomTestVirtualStore.API.Controllers
         [HttpDelete("{id}")]
         public ActionResult<User> DeleteUser(int id)
         {
-            var user = userService.GetUser(id);
+            var user = _userService.GetUser(id);
             if (user == null)
             {
                 return NotFound();
             }
 
-            userService.DeleteUser(id);
+            _userService.DeleteUser(id);
 
             return user;
         }

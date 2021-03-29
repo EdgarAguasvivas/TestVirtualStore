@@ -6,26 +6,26 @@ namespace TestVirtualStore.Services
 {
     public class SalesService : ISalesService
     {
-        private IRepository<Sales> salesRepository;
+        private IRepository<Sales> _salesRepository;
 
         public SalesService(IRepository<Sales> salesRepository)
         {
-            this.salesRepository = salesRepository;            
+            this._salesRepository = salesRepository;            
         }
 
         public IEnumerable<Sales> GetSales()
         {
-            return salesRepository.GetAll();
+            return _salesRepository.GetAll();
         }
 
         public Sales GetSale(int id)
         {
-            return salesRepository.Get(id);
+            return _salesRepository.Get(id);
         }
 
         public void InsertSale(Sales sales)
         {
-            salesRepository.Insert(sales);
+            _salesRepository.Insert(sales);
         }
     }
 }

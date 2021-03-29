@@ -47,9 +47,11 @@ namespace MardomTestVirtualStore.API
 
             services.AddDbContext<ContextApplication>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<ISalesService, SalesService>();
+            services.AddTransient<IAccountService, AccountService>();
 
             services.AddControllers();
         }
