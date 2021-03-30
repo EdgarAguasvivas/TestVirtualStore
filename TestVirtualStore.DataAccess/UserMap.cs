@@ -1,19 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace TestVirtualStore.DataAccess
 {
-    public class UserMap
+    public class UserMap : IEntityTypeConfiguration<User>
     {
-        public UserMap(EntityTypeBuilder<User> entityBuilder)
+        public void Configure(EntityTypeBuilder<User> builder)
         {
-            entityBuilder.HasKey(u => u.ID);
-            entityBuilder.Property(u => u.User_Name).IsRequired();
-            entityBuilder.Property(u => u.Password).IsRequired();
-            entityBuilder.HasOne(r => r.Roles).WithMany(u => u.Users).HasForeignKey(u => u.RolFK);
-
+            builder.HasKey(u => u.ID);
+            builder.Property(u => u.User_Name).IsRequired();
+            builder.Property(u => u.Password).IsRequired();
+            builder.HasOne(r => r.Roles).WithMany(u => u.Users).HasForeignKey(u => u.Rol);
         }
-    }
+    }  
 }

@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TestVirtualStore.DataAccess\TestVirtualStore.DataAccess.csproj" />
+    <ProjectReference Include="..\TestVirtualStore.Repository\TestVirtualStore.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

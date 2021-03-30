@@ -1,16 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace TestVirtualStore.DataAccess
 {
-    public class ProductMap
+    public class ProductMap : IEntityTypeConfiguration<Product>
     {
-        public ProductMap(EntityTypeBuilder<Product> entityBuilder)
-        {
-            entityBuilder.HasKey(t => t.ID);
-            entityBuilder.Property(t => t.Product_Code).IsRequired();
-            entityBuilder.Property(t => t.Product_Name).IsRequired();
-            entityBuilder.Property(t => t.Price).IsRequired();
-            entityBuilder.Property(t => t.Quantity).IsRequired();
+        public void Configure(EntityTypeBuilder<Product> builder)
+        {          
+            builder.HasKey(t => t.ID);
+            builder.Property(t => t.Product_Code).IsRequired();
+            builder.Property(t => t.Product_Name).IsRequired();
+            builder.Property(t => t.Price).IsRequired();
+            builder.Property(t => t.Quantity).IsRequired();
+
         }
     }
 }

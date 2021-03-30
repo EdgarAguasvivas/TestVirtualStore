@@ -12,8 +12,7 @@ namespace TestVirtualStore.DataAccess
 
         public int UserFK { get; set; }
         public User User { get; set; }
+        public ICollection<SaleDetail> SaleDetails { get; set; }
 
-        public int ProductFK { get; set; }
-        public Product Product { get; set; }
     }
 }

@@ -1,9 +1,12 @@
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\bin\Debug\netcoreapp3.1\TestVirtualStore.Repository.deps.json
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\bin\Debug\netcoreapp3.1\TestVirtualStore.Repository.dll
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\bin\Debug\netcoreapp3.1\TestVirtualStore.Repository.pdb
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\bin\Debug\netcoreapp3.1\TestVirtualStore.DataAccess.dll
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\bin\Debug\netcoreapp3.1\TestVirtualStore.DataAccess.pdb
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\obj\Debug\netcoreapp3.1\TestVirtualStore.Repository.csprojAssemblyReference.cache
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\obj\Debug\netcoreapp3.1\TestVirtualStore.Repository.AssemblyInfoInputs.cache
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\obj\Debug\netcoreapp3.1\TestVirtualStore.Repository.AssemblyInfo.cs
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\obj\Debug\netcoreapp3.1\TestVirtualStore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\obj\Debug\netcoreapp3.1\TestVirtualStore.Repository.csproj.CopyComplete
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\obj\Debug\netcoreapp3.1\TestVirtualStore.Repository.dll
 C:\Users\Erje_\Documents\MaritimaTestVirtualStore\TestVirtualStore\TestVirtualStore.Repository\obj\Debug\netcoreapp3.1\TestVirtualStore.Repository.pdb
