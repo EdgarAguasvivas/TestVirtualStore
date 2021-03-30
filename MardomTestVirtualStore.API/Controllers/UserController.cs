@@ -29,7 +29,7 @@ namespace MardomTestVirtualStore.API.Controllers
         [HttpGet("{id}")]
         public ActionResult<User> GetUser(int id)
         {
-            return _userService.GetUser(id);
+            return _userService.GetUser(id);  
         }
 
         [HttpPost]
@@ -45,25 +45,22 @@ namespace MardomTestVirtualStore.API.Controllers
             if (id != user.ID)
             {
                 return BadRequest();
-            }
+            }             
 
-            _userService.UpdateUser(user);
+            User userEntity = _userService.GetUser(id);
+            userEntity.User_Name = user.User_Name;
+            userEntity.Password = user.Password;
+            userEntity.Rol = user.Rol;
+
+            _userService.UpdateUser(userEntity);
 
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public ActionResult<User> DeleteUser(int id)
-        {
-            var user = _userService.GetUser(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            _userService.DeleteUser(id);
-
-            return user;
+        public void DeleteUser(int id)
+        {      
+             _userService.DeleteUser(id);
         }
 
     }

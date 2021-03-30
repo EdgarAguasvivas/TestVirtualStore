@@ -22,7 +22,9 @@ namespace TestVirtualStore.Services
 
         public User GetUser(int id)
         {
-            return _userRepository.Get(id);
+            User user = _userRepository.Get(id);
+            user.Password = SecurityService.Decrypt(user.Password);
+            return user;
         }
 
         public void InsertUser(User user)
@@ -37,7 +39,7 @@ namespace TestVirtualStore.Services
 
         public void DeleteUser(int id)
         {           
-            User user = GetUser(id);
+            User user = GetUser(id);              
             _userRepository.Remove(user);
             _userRepository.SaveChanges();
         }

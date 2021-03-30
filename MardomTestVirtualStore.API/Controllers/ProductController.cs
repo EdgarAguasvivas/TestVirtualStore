@@ -47,7 +47,13 @@ namespace MardomTestVirtualStore.API.Controllers
                 return BadRequest();
             }
 
-            productService.UpdateProduct(product);
+            Product productEntity = productService.GetProduct(id);
+            productEntity.Product_Name = product.Product_Name;
+            productEntity.Product_Code = product.Product_Code;
+            productEntity.Price = product.Price;
+            productEntity.Quantity = product.Quantity;
+
+            productService.UpdateProduct(productEntity);
 
             return NoContent();
         }

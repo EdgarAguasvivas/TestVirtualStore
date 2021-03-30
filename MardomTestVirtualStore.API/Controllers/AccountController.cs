@@ -22,6 +22,7 @@ namespace MardomTestVirtualStore.API.Controllers
         }
 
         [HttpPost]
+        [Route("[action]")]
         public ActionResult PostLogin(LoginViewModel login)
         {
             var resultLogin = _accountService.Login(login);
